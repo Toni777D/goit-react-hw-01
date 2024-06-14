@@ -1,27 +1,26 @@
-export default function Profile({
-  userData: { name, tag, location, image, stats },
-}) {
+import stylesProfile from "./Profile.module.css";
+export default function Profile({ name, tag, location, image, stats }) {
   return (
-    <div>
-      <div>
-        <img src={image} alt="User avatar" />
-        <p>{name}</p>
-        <p>{tag}</p>
-        <p>{location}</p>
+    <div className={CSS.wrap}>
+      <div className={CSS.description}>
+        <img className={CSS.avatar} src={image} alt="User avatar" />
+        <p className={CSS.name}>{name}</p>
+        <p className={CSS.tag}>{tag}</p>
+        <p className={CSS.location}>{location}</p>
       </div>
 
-      <ul>
-        <li>
-          <span>{stats.followers}</span>
-          <span>1000</span>
+      <ul className={CSS.infoActiveList}>
+        <li className={CSS.infoActiveItem}>
+          <span className={CSS.itemTitle}>{stats.followers}</span>
+          <span className={CSS.quantity}>1000</span>
         </li>
-        <li>
-          <span>{stats.views}</span>
-          <span>2000</span>
+        <li className={CSS.infoActiveItem}>
+          <span className={CSS.itemTitle}>{stats.views}</span>
+          <span className={CSS.quantity}>2000</span>
         </li>
-        <li>
-          <span>{stats.likes}</span>
-          <span>3000</span>
+        <li className={CSS.infoActiveItem}>
+          <span className={CSS.itemTitle}>{stats.likes}</span>
+          <span className={CSS.quantity}>3000</span>
         </li>
       </ul>
     </div>
