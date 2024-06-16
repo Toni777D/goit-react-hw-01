@@ -1,26 +1,27 @@
-import stylesProfile from "./Profile.module.css";
+import style from "./Profile.module.css";
+
 export default function Profile({ name, tag, location, image, stats }) {
   return (
-    <div className={CSS.wrap}>
-      <div className={CSS.description}>
-        <img className={CSS.avatar} src={image} alt="User avatar" />
-        <p className={CSS.name}>{name}</p>
-        <p className={CSS.tag}>{tag}</p>
-        <p className={CSS.location}>{location}</p>
+    <div className={style.wrap}>
+      <div className={style.description}>
+        <img className={style.avatar} src={image} alt="User avatar" />
+        <p className={style.name}>{name}</p>
+        <p className={style.tag}>{tag}</p>
+        <p className={style.location}>{location}</p>
       </div>
 
-      <ul className={CSS.infoActiveList}>
-        <li className={CSS.infoActiveItem}>
-          <span className={CSS.itemTitle}>{stats.followers}</span>
-          <span className={CSS.quantity}>1000</span>
+      <ul className={style.infoActiveList}>
+        <li className={style.infoActiveItem}>
+          <span className={style.itemTitle}>Followers</span>
+          <span className={style.quantity}>{stats.followers}</span>
         </li>
-        <li className={CSS.infoActiveItem}>
-          <span className={CSS.itemTitle}>{stats.views}</span>
-          <span className={CSS.quantity}>2000</span>
+        <li className={style.infoActiveItem}>
+          <span className={style.itemTitle}>Views</span>
+          <span className={style.quantity}>{stats.views}</span>
         </li>
-        <li className={CSS.infoActiveItem}>
-          <span className={CSS.itemTitle}>{stats.likes}</span>
-          <span className={CSS.quantity}>3000</span>
+        <li className={style.infoActiveItem}>
+          <span className={style.itemTitle}>Likes</span>
+          <span className={style.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
