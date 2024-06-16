@@ -1,0 +1,30 @@
+.tableTransaction{
+    
+    border-collapse: collapse;
+    border:2px solid #000;
+}
+.head{
+    background-color: #393838;
+    border: 1px solid #000;
+    font-size: 20px;
+    color:aliceblue;
+    
+}
+.th{
+    width: 150px;
+    padding: 6px;
+    border: 1px solid #393838;
+}
+
+.td{
+    border-collapse: collapse;
+    border: 2px solid #000;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 4px 60px;
+    
+}
+
+tbody tr:nth-child(even){
+    background-color: #cccbcb;
+}

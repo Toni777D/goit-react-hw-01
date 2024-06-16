@@ -1,0 +1,30 @@
+.wrapList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 20px;
+}
+.image{
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.name{
+    font-size: 30px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.status{
+    font-size: 20px;
+}
+.online{
+color: green;
+}
+.offline{
+    color: red;
+}
